@@ -1,9 +1,9 @@
-%% This file shows how to use the beamer template ruhuisstijl. It 
-%% mimics the corporate and departemental style for the Radboud 
-%% University powerpoint presentations. This file contains the 
-%% single-file version of the template. 
-%% 
-%% For comments, questions, and suggestions contact me at 
+%% This file shows how to use the beamer template ruhuisstijl. It
+%% mimics the corporate and departemental style for the Radboud
+%% University powerpoint presentations. This file contains the
+%% single-file version of the template.
+%%
+%% For comments, questions, and suggestions contact me at
 %% l.onrust@let.ru.nl or visit the github repository on
 %% https://github.com/naiaden/presentations/tree/master/ruhuisstijl
 %% (this single-file version can be found in the distributed dir)
@@ -17,7 +17,7 @@
 %% 20 October 2014: HLCS template added
 %% 28 October 2014: Kaski, PTRS, IMR, SteR templates added
 %% 11 November 2014: Group logo added for Language Machines (lama)
-%% 25 November 2014: DS, iCIS, IS, MBSD templates 
+%% 25 November 2014: DS, iCIS, IS, MBSD templates
 %% 20 February 2015: Many unoffical options added (thanks Bart Jacobs)
 %% 07 March 2016: iCIS Data Science and Software Science added, and small fixes
 %% 20 June 2017: Added support for 16:9, by demand of the communication department (I only did a global check. Let me know if I have to fix stuff). Use beamerruhuisstijl169 as the class, and department=none
@@ -66,7 +66,7 @@
 	\begin{block}{Introduction}
     	This presentation shows the possibilities of the Beamer version of the Radboud University's new (2014) corporate style Powerpoint template. Note that although one of the parameters to the document class for Beamer is \texttt{official}, and the university encourages the use of this template, only the Powerpoint and Keynote templates are officially supported. See \url{http://www.ru.nl/huisstijl/} for everything corporate style related.
     \end{block}
-    
+
     \begin{block}{Questions, feedback, and comments}
     	Don't hesitate to contact me, also if you have questions on how to realise certain parts of your presentation.
     	\begin{description}
@@ -74,19 +74,19 @@
             \item[Github] \href{https://github.com/naiaden}{naiaden}
         \end{description}
     \end{block}
-\end{frame}   
+\end{frame}
 \note{
 	I've sent this template to the department of Corporate Communications, and they got me in contact with the designers of this corporate style. They promised to look at the template, and to tell me on which points I can improve.
-    
+
     Although in the beginning I didn't like their ideas much, some of them I grew to appreciate. However, I do want to adhere to their guidelines. That's why I have an official and an unofficial version, which you can toggle with a document class parameter.
 }
 
 \begin{frame}{Distribution and Availability}
 	\begin{block}{Availability}
-    	The code of the Beamer class file and the background images are hosted at github: \url{https://github.com/naiaden/presentations/tree/master/ruhuisstijl/distributed}. There you will always find the newest version. 
-        
+    	The code of the Beamer class file and the background images are hosted at github: \url{https://github.com/naiaden/presentations/tree/master/ruhuisstijl/distributed}. There you will always find the newest version.
+
         The template on \textbf{write}\LaTeX{} is updated after every push to github. It may take a couple of days before the administrators of \textbf{write}\LaTeX{} approve the new version of the template.
-    \end{block} 
+    \end{block}
 
     \begin{block}{Distribution}
     	The code is currently licensed as \href{https://creativecommons.org/licenses/by/4.0/}{CC BY 4.0}. The Radboud University holds the right to the background images and to the texts on the slides \cpageref{sl:gvwa,sl:vvet}.
@@ -94,7 +94,7 @@
 \end{frame}
 \note{
 	I also have a beamer class split in multiple files. Don't use these files, as I cannot garantuee that they are in sync with the updates on the single \texttt{beamerruhuisstijl.cls}.
-    
+
     If you don't like the template, tell me. If you like the template, tell others. Feel free to distribute the template, or any derivative. If you do make any change to the template, let me know. Similarly, if you want to be kept up-to-date, let me know.
 }
 
@@ -108,7 +108,7 @@
           \item thoroughly look everything over, and check for overflows, wrong spacing after interpunction, spelling. \emph{everything}.
       \end{enumerate}
     \end{block}
-    
+
     \begin{block}{Title page}
       The creators of the official corporate style chose to have only a title and subtitle field on the title page. If you want to put all sorts of extra information there, I don't mind, but you are on your own.
     \end{block}
@@ -118,11 +118,11 @@
     	\begin{enumerate}
         	\item Download a zip from \textbf{write}\LaTeX{}, edit \texttt{main.tex}, and compile it into a presentation;
             \item Clone the github repository \texttt{presentations} from \texttt{naiaden}, and add the directory \texttt{presentations/tree/master/ruhuisstijl/distributed} to TEXINPUTS. Or at least link it such that the \TeX{} preprocessors can find it.
-            \item Download \texttt{beamerruhuisstijl.cls} and the backgrounds to your local machine (keep the directory structure with \texttt{backgrounds/}), and create a new \texttt{tex} file with your presentation.
+            \item Download \texttt{beamerruhuisstijl.cls} and the backgrounds to your local machine (keep the directory structure with \texttt{Images/backgrounds/}), and create a new \texttt{tex} file with your presentation.
         \end{enumerate}
 
 	The title page is one of the things I've grown to like. No distractions such as the affiliation, date, the author. Just the title. On the first slide after the title page there is ample space to put everything you think the user has to know.
-    
+
     And seriously. Invest some time in making your presentations. A spelling error can hardly be avoided. But text overflowing into the bottom bar, images of very poor quality, too much spacing after \emph{e.g.}; they all distract from the point you are trying to make.
 }
 
@@ -145,13 +145,13 @@
             \end{block}
         \end{column}
     \end{columns}
-    
+
     \begin{block}{Additional comments}
       Each frame (not necessarily each slide) has a note. Pass \texttt{show notes} as an option to the document class to show them, or look in the code. In the notes I will provide some thoughts and explanations.
 	\end{block}
 \end{frame}
 \note{
-	
+
 }
 
 %%%%%%%%%%          %%%%%%%%%%          %%%%%%%%%%          %%%%%%%%%%%%
@@ -182,10 +182,10 @@
             \item Teksten linkslijnend plaatsen, niet centreren
         \end{itemize}
     \end{block}
-\end{frame} 
+\end{frame}
 \note{
 	With the option to support grouplogos I violate the second rule which state that no additional text fields or images are to be added on the title page. But for example, I am affiliated with KU Leuven and Radboud University. In some cases you have to have both on your presentation: ``necessity knows no law.''
-    
+
     If you chose this presentation to be without any departmental style, then the spacing you see here for the list items is similar to the spacing in the example presentation provided by the RU. If you chose a departmental style, it is not. Unfortunately, the code is not dynamically executed, but only beforehand, during the parsing of all layout stuff. If you choose the style you want to use at the beginning, it all works out.
 }
 
@@ -197,14 +197,14 @@
             \item Tekst/inhoud: standaard, 25 pt
         \end{itemize}
     \end{block}
-    
+
     \begin{block}{Plaats teksten altijd in zwart of wit}
     	\begin{itemize}
         	\item Paginatitel: wit
             \item Inhoud tekst: zwart
         \end{itemize}
     \end{block}
-    
+
     \begin{block}{Maak altijd gebruik vastgestelde kantlijn}
     	\begin{itemize}
         	\item Titel en tekst/inhoud: horizontaal vanaf links 2,5 cm
@@ -264,7 +264,7 @@
 \section{Sjablonen}
 \begin{frame}
     \frametitle{Sjablonen}
-    
+
     \begin{block}{}
         Alle gebruikte sjablonen zijn aangemaakt in het basisdocument. \\
         U vindt de sjablonen onder Dia's > indelingen.
@@ -304,7 +304,7 @@
     \begin{itemize}
         \item que volore non etur aut laborum, te repudam, sus es acerrov itatest omnitatur, ea vid qui tempore re, alique.
         \begin{itemize}
-            \item Am restibusam nihillor 
+            \item Am restibusam nihillor
             \item Alias ne officati officate
             \item Sequae dollitate porat vitatem
         \end{itemize}
@@ -318,7 +318,7 @@
     \begin{columns}[T,totalwidth=\linewidth]
         \begin{column}{0.475\textwidth}
         \begin{block}{Dit sjabloon kunt u gebruiken voor twee tekstkolommen}
-            Berestrupta conseria quam quae commo et eaquam quo dolent omnistis estion cuptatet duciendae ommolor simporuntium fugit eicatem quis autem eatemquiam nissum eatum facerit inciis voluptas quae 
+            Berestrupta conseria quam quae commo et eaquam quo dolent omnistis estion cuptatet duciendae ommolor simporuntium fugit eicatem quis autem eatemquiam nissum eatum facerit inciis voluptas quae
 aut et es dellab ipsum, ium alis aboriandunt ea sinverios sequo ea consedi psapid molore autestium dio el in pelibea rcimustio esectae moluption reriam.
         \end{block}
         \end{column}
@@ -339,7 +339,7 @@ aut et es dellab ipsum, ium alis aboriandunt ea sinverios sequo ea consedi psapi
     \begin{columns}[T,totalwidth=\linewidth]
         \begin{column}{0.475\textwidth}
             \begin{block}{Maar ook voor een tekstkolom en een afbeelding}
-                Rectiatem sunto bla velesti berestrupta conseria quam quae omnistis estion cuptatet duciendae ommolor simporuntium fugit eicatem quis autem eatemquiam nissum eatum facerit inciis voluptas quae 
+                Rectiatem sunto bla velesti berestrupta conseria quam quae omnistis estion cuptatet duciendae ommolor simporuntium fugit eicatem quis autem eatemquiam nissum eatum facerit inciis voluptas quae
 aut et es dellab ipsum, ium alis aboriandunt ea sinverios sequo ea consedi psapid molore autestium dio el in pelibea rcimustio esectae moluption reriam.
             \end{block}
         \end{column}
@@ -350,7 +350,7 @@ aut et es dellab ipsum, ium alis aboriandunt ea sinverios sequo ea consedi psapi
 \end{frame}
 \note{}
 
-\begin{frame}{Vergelijking}  
+\begin{frame}{Vergelijking}
     \begin{columns}[T,totalwidth=\linewidth]
         \begin{column}{0.5\textwidth}
             \begin{block}{Sapienis simet esto ugit voluptatio eseria possimaio opturitatur}
@@ -404,11 +404,11 @@ aut et es dellab ipsum, ium alis aboriandunt ea sinverios sequo ea consedi psapi
 \end{frame}
 \note{
 	Tables are actually quite tricky. By default the rows are alternately coloured. You can change this behaviour by removing the tablecolours parameter, or setting it to \texttt{tablecolours=false}.
-    
+
     The background colour of a row can be changed with \texttt{rowcolor}, and its foreground colour with \texttt{rowstyle}. Each new tabular instantiation will reset the alternating pattern.
-    
+
     suggest you follow the rules as described by booktabs. One of their main points is that you shouldn't use vertical lines.
-    
+
     For more table wizardry, see my other presentation \href{https://github.com/naiaden/presentations/blob/2b04369db834cdfe90a4e4e3415e90f12bf4be8a/BayesianColibri/baco.tex}{here}.
 }
 
@@ -430,7 +430,7 @@ aut et es dellab ipsum, ium alis aboriandunt ea sinverios sequo ea consedi psapi
          \item<+-> dit verschijnt van de tweede actie tot het einde
          \item<+-+> dit verschijnt eenmalig van de derde tot de vierde actie
          \item<-+> Dit zal er staan vanaf het begin tot de vijfde actie.
-         \item<+-> Dit zal er op het einde komen 
+         \item<+-> Dit zal er op het einde komen
       \end{itemize}
 \end{frame}
 \note[itemize]{
@@ -440,14 +440,14 @@ aut et es dellab ipsum, ium alis aboriandunt ea sinverios sequo ea consedi psapi
 \begin{frame}{Nog een ander voorbeeld met stappen}
     Alert kan \alert<+->{ook}
     \emph<+->{andere} dingen:
-     
+
     \uncover<+->{ zoals}
     \visible<+->{ dit}
     \only<+->{ leuke}
     trucje
 \end{frame}
 \note{
-    
+
 }
 
 \begin{frame}{Hebban olla vogala nestas hagunnan hinase hic anda thu?}
@@ -457,12 +457,12 @@ aut et es dellab ipsum, ium alis aboriandunt ea sinverios sequo ea consedi psapi
             \item Habent omnes uolucres nidos inceptos nisi ego et tu. Quid expectamus nunc.
             \begin{itemize}
                 \item Have all birds begun nests, except me and you, what are we waiting for?
-                \item Es haben alle V\"ogel Nester begonnen, nicht aber ich und du, was wartet Ihr nun? 
+                \item Es haben alle V\"ogel Nester begonnen, nicht aber ich und du, was wartet Ihr nun?
             \end{itemize}
         \end{itemize}
         \item De tekst, die werd geschreven door een West-Vlaamse kopiist,
         \item dateert naar schatting uit het derde kwart van de 11e eeuw.
-        \item  De eerste twee zinnen zijn in het Latijn. 
+        \item  De eerste twee zinnen zijn in het Latijn.
         \item De taal waarin de rest van de tekst geschreven is wordt door de meeste taalkundigen als Oud-Westnederfrankisch aangeduid
         \item maar hierover bestaat nog controverse.
     \end{itemize}
@@ -492,7 +492,7 @@ aut et es dellab ipsum, ium alis aboriandunt ea sinverios sequo ea consedi psapi
     \end{description}
 \end{frame}
 \note{
-	Use \texttt{label} and \texttt{ref} to refer to labels. If you want to refer to slides, I would suggest using the package \texttt{cleveref}, and \texttt{cpageref}. 
+	Use \texttt{label} and \texttt{ref} to refer to labels. If you want to refer to slides, I would suggest using the package \texttt{cleveref}, and \texttt{cpageref}.
 }
 
 \begin{frame}{Opsommingen enzo}
@@ -545,7 +545,7 @@ aut et es dellab ipsum, ium alis aboriandunt ea sinverios sequo ea consedi psapi
     \end{block}
 
     \begin{block}{Notities voor op het tweede scherm}
-        Net als de presenter view van PowerPoint, kun je met \texttt{beamer} ook notities maken. Zoek in de source code maar op \texttt{\textbackslash note}. Standaard staan ze aan, maar als je na je frame niet aangeeft dat je notes wilt, dan wordt er ook geen pagina voor aangemaakt. 
+        Net als de presenter view van PowerPoint, kun je met \texttt{beamer} ook notities maken. Zoek in de source code maar op \texttt{\textbackslash note}. Standaard staan ze aan, maar als je na je frame niet aangeeft dat je notes wilt, dan wordt er ook geen pagina voor aangemaakt.
     \end{block}
 \end{frame}
 \note{}

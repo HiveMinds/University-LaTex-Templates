@@ -1,4 +1,4 @@
-%% This file implements the beamer template for the 2014 Radboud 
+%% This file implements the beamer template for the 2014 Radboud
 %% University corporate style. It also contains the template for
 %% the Centre for Language and Speech Technology department.
 %%
@@ -15,7 +15,7 @@
 \NeedsTeXFormat{LaTeX2e}
 \ProvidesClass{beamerruhuisstijl}[2014/10/07 Beamer template for Radboud University corporate style]
 
-\LoadClass[xcolor=table,10pt,t,aspectratio=169]{beamer}
+\LoadClass[xcolor=table,10pt,t]{beamer}
 
 \RequirePackage[utf8]{inputenc}
 \RequirePackage[T1]{fontenc}
@@ -137,112 +137,6 @@
   \fi
 }
 
-\pgfpagesdeclarelayout{6 on 1}
-{
-  \edef\pgfpageoptionheight{\the\paperwidth} % landscaped by default
-  \edef\pgfpageoptionwidth{\the\paperheight}
-  \def\pgfpageoptionborder{0pt}
-  \def\pgfpageoptionfirstshipout{1}
-}
-{
-  \pgfpagesphysicalpageoptions
-  {%
-    logical pages=6,%
-    physical height=\pgfpageoptionheight,%
-    physical width=\pgfpageoptionwidth,%
-    current logical shipout=\pgfpageoptionfirstshipout%
-  }
-  \ifdim\paperheight>\paperwidth\relax
-    % put side-by-side
-    \pgfpageslogicalpageoptions{1}
-    {%
-      border shrink=\pgfpageoptionborder,%
-      resized width=.5\pgfphysicalwidth,%
-      resized height=\pgfphysicalheight,%
-      center=\pgfpoint{.1667\pgfphysicalwidth}{.25\pgfphysicalheight}%
-    }%
-    \pgfpageslogicalpageoptions{3}
-    {%
-      border shrink=\pgfpageoptionborder,%
-      resized width=.5\pgfphysicalwidth,%
-      resized height=\pgfphysicalheight,%
-      center=\pgfpoint{.5\pgfphysicalwidth}{.25\pgfphysicalheight}%
-    }%
-    \pgfpageslogicalpageoptions{5}
-    {%
-      border shrink=\pgfpageoptionborder,%
-      resized width=.5\pgfphysicalwidth,%
-      resized height=\pgfphysicalheight,%
-      center=\pgfpoint{.8333\pgfphysicalwidth}{.25\pgfphysicalheight}%
-    }%
-    \pgfpageslogicalpageoptions{2}
-    {%
-      border shrink=\pgfpageoptionborder,%
-      resized width=.5\pgfphysicalwidth,%
-      resized height=\pgfphysicalheight,%
-      center=\pgfpoint{.1667\pgfphysicalwidth}{.75\pgfphysicalheight}%
-    }%
-    \pgfpageslogicalpageoptions{4}
-    {%
-      border shrink=\pgfpageoptionborder,%
-      resized width=.5\pgfphysicalwidth,%
-      resized height=\pgfphysicalheight,%
-      center=\pgfpoint{.5\pgfphysicalwidth}{.75\pgfphysicalheight}%
-    }%
-    \pgfpageslogicalpageoptions{6}
-    {%
-      border shrink=\pgfpageoptionborder,%
-      resized width=.5\pgfphysicalwidth,%
-      resized height=\pgfphysicalheight,%
-      center=\pgfpoint{.8333\pgfphysicalwidth}{.75\pgfphysicalheight}%
-    }%
-  \else
-    % stack on top of one another
-    \pgfpageslogicalpageoptions{1}
-    {%
-      border shrink=\pgfpageoptionborder,%
-      resized width=0.5\pgfphysicalwidth,%
-      resized height=\pgfphysicalheight,%
-      center=\pgfpoint{.25\pgfphysicalwidth}{.8333\pgfphysicalheight}%
-    }%
-    \pgfpageslogicalpageoptions{3}
-    {%
-      border shrink=\pgfpageoptionborder,%
-      resized width=0.5\pgfphysicalwidth,%
-      resized height=\pgfphysicalheight,%
-      center=\pgfpoint{.25\pgfphysicalwidth}{.5\pgfphysicalheight}%
-    }%
-    \pgfpageslogicalpageoptions{5}
-    {%
-      border shrink=\pgfpageoptionborder,%
-      resized width=0.5\pgfphysicalwidth,%
-      resized height=\pgfphysicalheight,%
-      center=\pgfpoint{.25\pgfphysicalwidth}{.1667\pgfphysicalheight}%
-    }%
-    \pgfpageslogicalpageoptions{2}
-    {%
-      border shrink=\pgfpageoptionborder,%
-      resized width=0.5\pgfphysicalwidth,%
-      resized height=\pgfphysicalheight,%
-      center=\pgfpoint{.75\pgfphysicalwidth}{.8333\pgfphysicalheight}%
-    }%
-    \pgfpageslogicalpageoptions{4}
-    {%
-      border shrink=\pgfpageoptionborder,%
-      resized width=0.5\pgfphysicalwidth,%
-      resized height=\pgfphysicalheight,%
-      center=\pgfpoint{.75\pgfphysicalwidth}{.5\pgfphysicalheight}%
-    }%
-    \pgfpageslogicalpageoptions{6}
-    {%
-      border shrink=\pgfpageoptionborder,%
-      resized width=0.5\pgfphysicalwidth,%
-      resized height=\pgfphysicalheight,%
-      center=\pgfpoint{.75\pgfphysicalwidth}{.1667\pgfphysicalheight}%
-    }%
-  \fi
-}
-
 \ifthenelse{\equal{\spp}{2}}{\pgfpagesuselayout{2 on 1}[a4paper,border shrink=5mm]}{}
 \ifthenelse{\equal{\spp}{3}}{\pgfpagesuselayout{3 on 1}[a4paper,border shrink=5mm]}{}
 \ifthenelse{\equal{\spp}{4}}{\pgfpagesuselayout{4 on 1}[a4paper,border shrink=5mm,landscape]}{}
@@ -256,6 +150,8 @@
 \setbeamercolor*{page number in head/foot}{fg=ruhuisstijlzwart}
 \setbeamerfont{author in head/foot}{size=\footnotesize}
 \setbeamercolor*{author in head/foot}{fg=ruhuisstijlzwart}
+
+
 
 %%% Footnote stuff
 % Cannot get it working to skip the title page when extra information
@@ -290,9 +186,10 @@
         }{%
         	\vspace{1.25cm}
         }
-        
+
     }
 }
+
 
 
 \setbeamertemplate{footnote}{%
@@ -300,7 +197,6 @@
 }
 
 %%% Table of content stuff
-
 \ifbeamer@official
     \ifthenelse{\equal{\dept}{none}}{%
         \setbeamertemplate{subsection in toc}{\leavevmode\leftskip=0.5em\parbox[t]{\textwidth-\leftskip-0.5em}{\inserttocsubsection}\par}
@@ -313,7 +209,6 @@
 
 
 %%% Description stuff
-
 \ifbeamer@official
     \ifthenelse{\equal{\dept}{none}}{%
         \setbeamersize{description width=0.5em}
@@ -401,7 +296,6 @@
   \beamer@firstlineitemizeunskip%
 }
 
-
 \ifbeamer@official
     % Removes the figure number from the caption. Use {caption}[numbered] otherwise
     \setbeamertemplate{caption}{\raggedright\insertcaption\par}
@@ -428,12 +322,10 @@
 \fi%
 
 
-
-
 \setbeamertemplate{frametitle}
 {
     \vspace*{1.5em}%
-    \begin{minipage}[t][.5cm][t]{15cm}%
+    \begin{minipage}[t][.5cm][t]{10cm}%
         \begin{beamercolorbox}{frametitle}%
             \raggedright\insertframetitle\par%
         \end{beamercolorbox}%
@@ -442,11 +334,15 @@
 
 \newenvironment{tussenpagina}[3]{%
     \begin{frame}
-            \vspace*{-0.25cm}\hspace*{-1cm}\includegraphics[width=1\paperwidth]{backgrounds/ruhuisstijl2017-en-169-title.pdf}
+        \ifthenelse{\equal{\dept}{none}}{%
+            \vspace*{-0.25cm}\hspace*{-1cm}\includegraphics[width=1\paperwidth]{Images/backgrounds/ruhuisstijl2014-43-front.pdf}
             \vspace*{-5cm}
             \includegraphics[width=0.5\textwidth]{#3}\par%
             \vspace*{-8cm}
-        
+        }{%
+            \vspace*{-0.25cm}\hspace*{-1cm}\includegraphics[width=12.8cm,height=8.34cm]{#3}
+            \vspace*{-7.5cm}
+        }
         \begin{minipage}[t][2.5cm][t]{10cm}%
             \begin{beamercolorbox}{title}%
                 \usebeamerfont{title}{\Huge#1\par}%
@@ -469,19 +365,151 @@
 }
 
 \setbeamertemplate{background}{
+    \ifthenelse{\equal{\dept}{clst}}{%
         \ifnum\thepage>1\relax%
-            \includegraphics[width=1\paperwidth]{backgrounds/ruhuisstijl2017-en-169-redslide.pdf}
+            \includegraphics[width=1\paperwidth]{Images/backgrounds/ruhuisstijl_clst_2014-43-slide.pdf}
         \fi
+    }{%
+    \ifthenelse{\equal{\dept}{cls}}{%
+        \ifnum\thepage>1\relax%
+            \includegraphics[width=1\paperwidth]{Images/backgrounds/ruhuisstijl_cls_2014-43-slide.pdf}
+        \fi
+    }{%
+    \ifthenelse{\equal{\dept}{hlcs}}{%
+        \ifnum\thepage>1\relax%
+            \includegraphics[width=1\paperwidth]{Images/backgrounds/ruhuisstijl_hlcs_2014-43-slide.pdf}
+        \fi
+    }{%
+    \ifthenelse{\equal{\dept}{kaski}}{%
+        \ifnum\thepage>1\relax%
+            \includegraphics[width=1\paperwidth]{Images/backgrounds/ruhuisstijl_kaski_2014-43-slide.pdf}
+        \fi
+    }{%
+    \ifthenelse{\equal{\dept}{ptrs}}{%
+        \ifnum\thepage>1\relax%
+            \includegraphics[width=1\paperwidth]{Images/backgrounds/ruhuisstijl_ptrs_2014-43-slide.pdf}
+        \fi
+    }{%
+    \ifthenelse{\equal{\dept}{imr}}{%
+        \ifnum\thepage>1\relax%
+            \includegraphics[width=1\paperwidth]{Images/backgrounds/ruhuisstijl_imr_2014-43-slide.pdf}
+        \fi
+    }{%
+    \ifthenelse{\equal{\dept}{is}}{%
+        \ifnum\thepage>1\relax%
+            \includegraphics[width=1\paperwidth]{Images/backgrounds/ruhuisstijl_is_2014-43-slide.pdf}
+        \fi
+    }{%
+    \ifthenelse{\equal{\dept}{ds}}{%
+        \ifnum\thepage>1\relax%
+            \includegraphics[width=1\paperwidth]{Images/backgrounds/ruhuisstijl_ds_2014-43-slide.pdf}
+        \fi
+    }{%
+    \ifthenelse{\equal{\dept}{icis}}{%
+        \ifnum\thepage>1\relax%
+            \includegraphics[width=1\paperwidth]{Images/backgrounds/ruhuisstijl_icis_2014-43-slide.pdf}
+        \fi
+    }{%
+    \ifthenelse{\equal{\dept}{mbsd}}{%
+        \ifnum\thepage>1\relax%
+            \includegraphics[width=1\paperwidth]{Images/backgrounds/ruhuisstijl_mbsd_2014-43-slide.pdf}
+        \fi
+    }{%
+    \ifthenelse{\equal{\dept}{ster}}{%
+        \ifnum\thepage>1\relax%
+            \includegraphics[width=1\paperwidth]{Images/backgrounds/ruhuisstijl_ster_2014-43-slide.pdf}
+        \fi
+    }{%
+    \ifthenelse{\equal{\dept}{datascience}}{%
+        \ifnum\thepage>1\relax%
+            \includegraphics[width=1\paperwidth]{Images/backgrounds/ruhuisstijl_ds_2016_43-slide.pdf}
+        \fi
+    }{%
+    \ifthenelse{\equal{\dept}{softwarescience}}{%
+        \ifnum\thepage>1\relax%
+            \includegraphics[width=1\paperwidth]{Images/backgrounds/ruhuisstijl_ss_2016_43-slide.pdf}
+        \fi
+    }{%
+        \ifnum\thepage>1\relax%
+            \includegraphics[width=1\paperwidth]{Images/backgrounds/ruhuisstijl2014-43-slide.pdf}
+        \fi
+    }}}}}}}}}}}}}%
+    \ifthenelse{\equal{\grouplogo}{lama}}{%
+        %\vspace*{-0.8cm}
+        \hspace*{-12.5cm}
+        % [trim=-5cm 0 0 -1cm] left bottom right top
+        % trim the graphic for positive values and add space for negative values
+        \includegraphics[scale=0.4, trim=0cm -0.5cm 0cm 0cm]{logo/lama.pdf}
+    }{%
+    }%
 }
 
 
 \defbeamertemplate*{title page}{ruhuisstijl}[1][]
 {
-    
-   
+    \ifthenelse{\equal{\dept}{clst}}{%
+			\vspace*{-0.25cm}\hspace*{-1.08cm}
+            \includegraphics[width=1\paperwidth]{Images/backgrounds/ruhuisstijl_clst_2014-43-front.pdf}
+    }{%
+    \ifthenelse{\equal{\dept}{cls}}{%
+        	\vspace*{-0.25cm}\hspace*{-1.08cm}
+            \includegraphics[width=1\paperwidth]{Images/backgrounds/ruhuisstijl_cls_2014-43-front.pdf}
+    }{%
+    \ifthenelse{\equal{\dept}{hlcs}}{%
+			\vspace*{-0.25cm}\hspace*{-1.08cm}
+            \includegraphics[width=1\paperwidth]{Images/backgrounds/ruhuisstijl_hlcs_2014-43-front.pdf}
+    }{%
+    \ifthenelse{\equal{\dept}{kaski}}{%
+			\vspace*{-0.25cm}\hspace*{-1.08cm}
+            \includegraphics[width=1\paperwidth]{Images/backgrounds/ruhuisstijl_kaski_2014-43-front.pdf}
+    }{%
+    \ifthenelse{\equal{\dept}{ptrs}}{%
+			\vspace*{-0.25cm}\hspace*{-1.08cm}
+            \includegraphics[width=1\paperwidth]{Images/backgrounds/ruhuisstijl_ptrs_2014-43-front.pdf}
+    }{%
+    \ifthenelse{\equal{\dept}{imr}}{%
+			\vspace*{-0.25cm}\hspace*{-1.08cm}
+            \includegraphics[width=1\paperwidth]{Images/backgrounds/ruhuisstijl_imr_2014-43-front.pdf}
+    }{%
+    \ifthenelse{\equal{\dept}{is}}{%
+			\vspace*{-0.25cm}\hspace*{-1.08cm}
+            \includegraphics[width=1\paperwidth]{Images/backgrounds/ruhuisstijl_is_2014-43-front.pdf}
+    }{%
+    \ifthenelse{\equal{\dept}{datascience}}{%
+			\vspace*{-0.25cm}\hspace*{-1.08cm}
+            \includegraphics[width=1\paperwidth]{Images/backgrounds/ruhuisstijl_ds_2016_43-front.pdf}
+    }{%
+    \ifthenelse{\equal{\dept}{softwarescience}}{%
+			\vspace*{-0.25cm}\hspace*{-1.08cm}
+            \includegraphics[width=1\paperwidth]{Images/backgrounds/ruhuisstijl_ss_2016_43-front.pdf}
+    }{%
+    \ifthenelse{\equal{\dept}{icis}}{%
+			\vspace*{-0.25cm}\hspace*{-1.08cm}
+            \includegraphics[width=1\paperwidth]{Images/backgrounds/ruhuisstijl_icis_2014-43-front.pdf}
+    }{%
+    \ifthenelse{\equal{\dept}{mbsd}}{%
+			\vspace*{-0.25cm}\hspace*{-1.08cm}
+            \includegraphics[width=1\paperwidth]{Images/backgrounds/ruhuisstijl_mbsd_2014-43-front.pdf}
+    }{%
+    \ifthenelse{\equal{\dept}{ds}}{%
+			\vspace*{-0.25cm}\hspace*{-1.08cm}
+            \includegraphics[width=1\paperwidth]{Images/backgrounds/ruhuisstijl_ds_2014-43-front.pdf}
+    }{%
+    \ifthenelse{\equal{\dept}{ster}}{%
+			\vspace*{-0.25cm}\hspace*{-1.08cm}
+            \includegraphics[width=1\paperwidth]{Images/backgrounds/ruhuisstijl_ster_2014-43-front.pdf}
+    }{%
 			\vspace*{-0.23cm}\hspace*{-1.08cm}
-            \includegraphics[width=1\paperwidth]{backgrounds/ruhuisstijl2017-en-169-front.pdf}
-    
+            \includegraphics[width=1\paperwidth]{Images/backgrounds/ruhuisstijl2014-43-front.pdf}
+    }}}}}}}}}}}}}%
+    \ifthenelse{\equal{\grouplogo}{lama}}{%
+    	%\vspace*{-0.8cm}
+        \hspace*{-12.5cm}
+        % [trim=-5cm 0 0 -1cm] left bottom right top
+        % trim the graphic for positive values and add space for negative values
+        \includegraphics[scale=0.4, trim=0cm -0.5cm -50cm 0cm]{logo/lama.pdf}
+    }{%
+    }%
     \vspace*{-8.5cm}
     \begin{minipage}[t][2.5cm][t]{10cm}%
         \begin{beamercolorbox}{title}%
@@ -501,7 +529,6 @@
         }{}
     \end{minipage}%
 }
-
 
 
 \setbeameroption{\notes}
@@ -530,8 +557,7 @@
 \setbeamerfont{author in head/foot}{size=\footnotesize}
 
 \ifthenelse{\equal{\dept}{none}}{%
-    \setbeamercolor{title}{fg=ruhuisstijlwit}
-    \setbeamercolor{subtitle}{fg=ruhuisstijlwit}
+    \setbeamercolor{title}{fg=ruhuisstijlzwart}
     \setbeamercolor{date}{fg=ruhuisstijlzwart}
     \setbeamercolor{institute}{fg=ruhuisstijlzwart}
     \setbeamercolor*{page number in head/foot}{fg=ruhuisstijlwit}
